@@ -1,0 +1,1484 @@
+@import "variable/*"
+@import "icon/*"
+@import 'axis'
+@import 'jeet'
+@import 'rupture'
+
+border-box-html()
+fluid-media() //care flex box image
+rupture.scale = 0 400px 600px 780px 960px 1300px
+rupture.scale-names = 'xs' 'sm' 'm' 'l' 'xl' 'hd'
+jeet.gutter = 1
+
+wraper
+	center(1200px)
+	padding 20px
+html
+	height: 100%!important
+body
+	height: 100%!important
+body
+	font-family 'Noto Sans'
+	color textcolor
+a
+	text-decoration none
+input
+	outline:none
+
+.hidden
+	display none
+.visible
+	visibility visible
+
+.section-view
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+	min-height 580px!important
+.main-cont
+	min-width 1280px
+	position relative
+.top-menu
+	height 60px
+	background maingreen
+	flex(between)
+	padding 0 30px
+	position fixed
+	width 100%
+	top 0
+	z-index 4000
+	min-width 1280px
+.top-menu-logo
+	width 0
+	margin-right 60px
+
+
+.top-menu-el
+	color white
+	font-family "Noto Sans"
+	font-size 19px
+	font-weight bold
+	line-height 24px
+	margin-right 100px
+	position relative
+	&:hover
+		text-decoration underline
+	&:after
+		content ''
+		position absolute
+		width 1px
+		height 15px
+		background white
+		right -50px
+		top 7px
+	&:last-child
+		&:after
+			content ''
+			width 0
+
+.top-menu-left
+	flex(mid)
+	justify-content flex-start
+.top-menu-right
+	flex(mid)
+	justify-content flex-end
+.top-menu-right-img
+	margin-right 30px
+.top-menu-right-number
+	color white
+	font-family "Noto Sans"
+	font-size 19px
+	font-weight 700
+	line-height 24px
+	
+.section-main
+	width 100%
+	//height 100vh
+	bgi('bg-section-main.jpg')
+	background-size cover
+	background-position center top
+	
+	
+.section-main
+	padding-top 70px
+	flex(mid)
+	flex-flow column
+	justify-content space-between
+.section-main-logo
+	margin 15px
+	width 17%
+.section-main-title
+	+below(1440px)
+			margin-bottom 10px	
+	flex(mid)
+.section-main-title-black
+	font-family "Noto Sans"
+	font-size 30px
+	font-weight 700
+	line-height 24px
+	color #293437
+.section-main-title-number
+	margin 0 15px
+	span.section-main-title-number-el
+		+below(1440px)
+			background-size cover
+			width 35px
+			height 48px
+			font-size 32px
+			line-height 40px	
+		width 42px
+		height 60px
+		display inline-block
+		color #333
+		font-size 47px
+		font-weight 700
+		line-height 35px
+		text-align center
+		margin-right 5px
+		position relative
+		z-index 10
+		bgi('number-user.png')
+		text-align center
+		line-height 45px
+		position relative
+		
+		&:after
+			content ''
+			height 2px
+			width 100%
+			background #D8D8D8
+			top 40%
+			position absolute
+			left 0
+			
+			
+.section-main-title-whtie
+	color white
+	font-family "Noto Sans"
+	font-size 30px
+	font-weight 700
+	line-height 24px
+.section-main-video
+	+below(1440px)
+		height 50%	
+	border-radius 20px
+	width 45%
+	height 50%
+	border 10px solid white
+	border-radius 40px
+	position relative
+	overflow hidden
+	z-index 2000
+	img
+		position absolute
+		top 50%
+		left 50%
+		margin-top -71px
+		margin-left -71px
+		z-index 20
+		&:hover
+			cursor pointer
+
+.section-main-video-filter
+	opacity 0.8
+	background-color black
+	border-radius 20px
+	width 45%
+	height 45%
+	background-color #000
+	position absolute
+	width 100%
+	height 100%
+	z-index 10
+.section-main-form
+	margin-bottom 20px
+	//margin-top -35px	
+	input
+		background none
+		border 0px
+		min-width 300px
+		padding 10px
+		border 1px solid white!important
+		border-radius 5px
+		outline none
+		color white
+	input + input 
+		margin-top 20px
+	button
+		+below(1440px)
+			height 35px	
+		margin-top 15px
+		background yellow
+		border 0px
+		size 300px 45px
+		background-color #fecc00
+		border-radius 5px
+		color #293437
+		font-family "Noto Sans"
+		font-size 18px
+		font-weight 700
+		line-height 24px
+		tr(all)
+		&:hover
+			background maingreen
+			color white
+
+input[placeholder]
+	text-overflow:ellipsis
+	font-family "Noto Sans"
+	font-size 14px
+	font-style italic
+	line-height 24px
+input::-moz-placeholder
+	text-overflow:ellipsis
+	font-family "Noto Sans"
+	font-size 14px
+	font-style italic
+	line-height 24px 
+input:-moz-placeholder
+	text-overflow:ellipsis
+	font-family "Noto Sans"
+	font-size 14px
+	font-style italic
+	line-height 24px 
+input:-ms-input-placeholder 
+	text-overflow:ellipsis
+	font-family "Noto Sans"
+	font-size 14px
+	font-style italic
+	line-height 24px
+input:-moz-placeholder
+	color white
+input::-webkit-input-placeholder
+	color white
+.section-main-form-title
+	+below(1440px)
+		font-size 18px
+		margin-bottom 5px	
+	text-shadow 2px 3.5px 2px rgba(0, 0, 0, 0.42)
+	color white
+	font-family "Noto Sans"
+	font-size 22px
+	font-weight 700
+	line-height 24px
+	margin-bottom 15px
+
+.section-main-registration-but
+	background-color #fecc00
+	border-radius 10px
+	padding 15px 60px
+	color textcolor
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 24px
+	display inline-block
+	margin 20px 0 50px
+
+.section-main-sale-but
+	background-color #fecc00
+	border-radius 10px
+	padding 15px 60px
+	color textcolor
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 24px
+	display inline-block
+	position absolute
+	top 80px
+	right 30px
+.section-next-btn
+	position absolute
+	bottom 0
+	left 50%
+	width 50px
+	height 50px
+	margin-left -25px
+	font-size 50px
+	line-height 50px
+	text-align center
+	color #fff
+	transform translateY(0)
+	transition transform .3s
+	background transparent !important
+	&.dark
+		color #293437
+	&:hover
+		transform translateY(5px)
+.introVideo
+	position absolute
+	width 100%
+	height 100%
+	z-index 5
+
+.section-main-form-rule
+	margin-top 15px
+	text
+		color white
+		font-family "Noto Sans"
+		font-size 14px
+		font-weight 400
+		line-height 24px
+		a
+			color white
+			text-decoration underline
+
+input[type="checkbox"] {
+    display:none;
+}
+
+input[type="checkbox"] + label span {
+    display:inline-block;
+    width:25px;
+    height:25px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    bgi('Check-box.png')
+    cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+    bgi('Check-box-ckeck.png')
+}
+
+.left-nav
+	width 70px
+	background bg-grey
+	position fixed
+	top 22%
+	overflow hidden
+	z-index 10000
+	tr(all)
+	&:hover
+		width 380px
+.left-nav-el
+	flex(between)
+	justify-content flex-start
+	padding-right 20px
+	overflow hidden
+	min-width 380px
+	tr(all)
+	&:hover
+		background maingreen
+		cursor pointer
+.left-nav-el-img
+	width 70px
+	height 70px
+	flex(mid)
+.left-nav-el-text
+	color white
+	font-family "Noto Sans"
+	font-size 19px
+	font-weight 400
+	line-height 24px
+
+.left-nav-el-active
+	background maingreen
+	
+.section-adv
+	height 100vh
+	width 100%
+	position relative
+	padding-bottom 50px
+	
+//.section-adv
+.section-adv-el
+	+below(1440px)
+		padding 10px	
+	span(1/5)
+	width 19%
+	position relative
+	height 100%
+	padding 25px
+	background-size cover!important
+	position relative
+	
+	&:hover
+		img
+			-webkit-filter none
+			filter none
+			filter none
+			filter none
+.section-adv-el-first
+	width 24%
+	padding-left 6%
+	.section-adv-el-footer
+		width 80%	
+		margin-left -3%
+	.section-adv-el-title
+		margin-top 80%	
+		+below(1600px)
+			margin-top 60%
+			padding-left 5%	
+		
+.section-adv-el-title
+	margin-top 80%
+	flex(between)
+	height 80px
+	+below(1600px)
+			margin-top 60%
+.section-adv-el-title-text
+	
+	color #293437
+	font-family "Noto Sans"
+	font-size 24px
+	font-weight 700
+	line-height 30px
+	width 70%
+	+below(1600px)
+			font-size 18px
+	+below(1400px)
+		font-size 16px
+//.section-adv-el-title-icon
+.section-adv-el-text
+	margin-bottom 40px
+	p
+		font-family "Noto Sans"
+		font-size 1.4vh
+		font-weight 400
+		line-height 22px
+		+below(1600px)
+			font-weight: 400;
+			line-height: 20px;
+		+below(1500px)
+			font-weight: 400;
+			line-height: 18px;
+		+below(1440px)
+				margin 10px
+				margin-bottom 3px
+.section-adv-el-img
+	img
+		width 100%
+		position absolute
+		left 0px
+		top 0
+		-webkit-filter: grayscale(100%);
+		filter: gray;
+		filter: grayscale(100%);
+		//filter: url(/img/desaturate.svg#dark);
+		
+.section-adv-el-but
+		
+	width 60%
+	display inline-block
+	tr(all)
+	&:hover
+		background maingreen
+		color white
+
+.section-adv-el-content
+	position relative
+	
+.section-adv-el-footer
+	position absolute
+	bottom 40px
+	margin-left -7%
+	width 95%
+	flex mid
+	+below(1600px)
+		margin-left 0
+	a
+		+below(1440px)
+			width 90%	
+		width 80%
+		display inline-block
+		background #FFC730
+		border-radius 7px
+		color textcolor
+		font-family "Noto Sans"
+		font-size 20px
+		font-weight 700
+		line-height 19px
+		text-align center
+		padding 15px 0
+		+below(1400px)
+			font-size 16px
+
+.section-top-title
+	position absolute
+	z-index 200
+	font-family "Noto Sans"
+	font-size 48px
+	font-weight 700
+	line-height 24px
+	left 65px
+	top 12%
+	+below(1400px)
+		font-size 36px
+		
+.section-about
+	width 100%
+	height 100vh
+	bgi('bg-section-about.jpg')
+	position relative
+
+		
+.section-about-number
+	span.section-main-title-number-el
+		width 42px
+		height 60px
+		display inline-block
+		color #333
+		font-size 47px
+		font-weight 700
+		line-height 35px
+		text-align center
+		margin-right 5px
+		position relative
+		z-index 10
+		bgi('number-user.png')
+		text-align center
+		line-height 45px
+		position relative
+		
+		&:after
+			content ''
+			height 2px
+			width 100%
+			background #D8D8D8
+			top 40%
+			position absolute
+			left 0
+			
+.section-about
+	padding-top 100px
+	background-size: cover;
+//.section-top-title
+.section-about-users
+	flex(mid)
+.section-about-users-left
+	margin-right 45px
+	width 10%	
+.section-about-users-rigth
+	flex(mid)
+	flex-flow column
+	align-items flex-start
+//.section-about-number
+.section-about-users-rigth-text
+	font-family "Noto Sans"
+	font-size 48px
+	font-weight 700
+	line-height 60px
+	
+.section-about-slider
+	background maingreen
+	padding 4% 0px
+	opacity .9
+	position absolute	
+	top 50%
+	margin-top -5%	
+	
+.section-about-slider-wrap
+	flex(around)
+
+.section-about-slider-el
+	width 15%
+	flex(mid)
+	flex-flow column
+.section-about-slider-el-numb
+	color white
+	font-family "Noto Sans"
+	font-size 72px
+	font-weight 700
+	line-height 48px
+	margin 20px 0
+	+below(1800px)
+		font-size 58px
+		line-height 26px;
+	+below(1500px)
+		font-size 54px
+	+below(1400px)
+		font-size 46px
+.section-about-slider-el-text
+	+below(1800px)
+		line-height 26px;
+	+below(1440px)
+		font-size 14px	
+	color white
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	text-align center
+	line-height 36px
+	
+.owl-prev,
+.owl-next
+	position absolute
+	top 50%
+	margin-top -37px
+.owl-prev
+	left 5%
+.owl-next
+	right 5%
+
+.owl-dots
+	position absolute
+	bottom: 5%;
+	left 50%
+	flex(mid)
+	.active
+		background white
+	margin-left -30px
+.owl-dot
+	width 16px
+	height 16px
+	border-radius 50%
+	border 2px solid white
+	margin-right 10px
+	
+.section-top-footerText 
+	text-shadow 2px 3.5px 2px rgba(0, 0, 0, 0.42)
+	color white
+	font-size 28px
+	font-weight 700
+	line-height 21px
+	position absolute
+	bottom 15%
+	left 75px
+	
+.section-final
+	height 100vh
+	width 100%
+	bgi('bg-section-final.jpg')
+	background-size: cover;
+
+.section-final
+	+below(1440px)
+		padding-top 80px	
+	position relative
+	padding-top 160px
+	
+.section-final-sloganFirst
+	padding-left 10%
+	div
+		&:nth-child(1)
+			font-size 60px
+			font-weight 700
+			line-height 60px
+		
+		&:nth-child(2)
+			font-size 48px
+			font-weight 400
+
+.section-final-sloganSecond
+	+below(1440px)
+		margin-top 40px
+	padding-left 10%
+	margin-top 80px
+	div
+		&:nth-child(1)
+			+below(1440px)
+				font-size 68px
+			color #f22323
+			font-family "Noto Sans"
+			font-size 72px
+			font-weight 700
+			line-height 60px
+			text-transform uppercase
+		
+		&:nth-child(2)
+			+below(1440px)
+				font-size 34px
+			color #293437
+			font-family "Noto Sans"
+			font-size 48px
+			font-weight 700
+			line-height 48px
+
+.section-final-footer
+	flex(between)
+	padding 0 30px
+	background: rgba(34, 34, 34, 0.76);
+	position absolute
+	width 100%
+	bottom 0
+	height 50px
+	left 0
+.section-final-footer-left
+	color #aeaaaa
+	font-family "Noto Sans"
+	font-size 14px
+	font-weight 700
+	line-height 24px
+//.section-final-footer-right
+
+.section-final-form-wrap
+	position absolute	
+	bottom 10%	
+	width 100%
+	flex(mid)
+	margin-top 100px
+	
+.section-time
+	+below(1440px)
+		padding-top 110px	
+	width 100%
+	height 100vh
+	bgi('bg-section-service.jpg')
+	background-size cover
+	background-position: center top
+	padding-top 130px 
+	position relative
+	color black
+.section-time-topTitle
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 24px
+	position absolute
+	top 7%
+	right 30px
+	+below(1440px)
+		top 9%
+.section-time-mainTitle
+	+below(1440px)
+		margin-bottom 2%	
+	color white
+	font-family "Noto Sans"
+	font-size 4vh
+	font-weight 700
+	line-height 24px
+	text-align center
+	margin-bottom: 2%
+.section-time-text
+	width 80%
+	padding 10px
+	background maingreen
+	color white
+	font-size 18px
+	text-align center
+	+below(1600px)
+		font-size 12px
+	span 
+		font-size 24px
+	margin 0 auto
+.section-time-elWraper
+	+below(1600px)
+		margin-top 2%
+	margin-top 4%
+	flex(mid)
+	padding 0 5%
+	align-items: flex-start;
+.section-time-el
+	flex(mid)
+	flex-flow column
+	span(1/7)
+.section-time-el-img
+	margin-bottom 20px
+	width 25%
+	img
+		width 100%
+	
+.section-time-el-text
+	color white
+	font-family "Noto Sans"
+	font-size 14px
+	font-weight 700
+	line-height 22px
+	text-align center
+	width 85%
+	+below(1600px)
+		font-size 12px
+		font-weight 400
+		line-height 20px
+	
+.section-time-form-wrap
+	width 100%
+	flex(mid)
+	position absolute
+	top 58%
+
+.section-time-quote
+	+below(1440px)
+		bottom 20%
+	position absolute
+	left 80px
+	bottom 20%
+	width 290px
+.section-time-quote-wrap
+	position relative
+	&:before
+		content ''
+		position absolute
+		width 41px
+		height 32px
+		bgi('quotes.png')
+		left -60px
+.section-time-quote-top
+	+below(1440px)
+		font-size 12px	
+	color white
+	font-family "Noto Sans"
+	font-size 18px
+	font-style italic
+	line-height 24px
+	
+.section-time-quote-bottom
+	flex(between)
+	align-items flex-end
+.section-time-quote-bottom-link
+	color #363636
+	font-family "Noto Sans"
+	font-size 14px
+	font-weight 400
+	line-height 24px
+	text-decoration underline
+	padding-top 5px
+	&:hover
+		cursor pointer
+.section-time-quote-bottom-name
+	text-shadow 0.5px 0.9px 2px white
+	color #22af75
+	font-family "Noto Sans"
+	font-size 24px
+	font-weight 700
+	line-height 24px
+.section-time-quote-tooltip-wraper
+	position absolute	
+.section-time-quote-tooltip
+	+below(1440px)
+		padding 5px 10px
+	width 1080px
+	padding 15px
+	background black
+	opacity 0.8
+	border-radius 10px
+	position relative
+	margin-top 10px
+	&:before
+		content ''
+		triangle:'up' 10px black
+		position absolute
+		top -10px
+		left 40px
+	p
+		+below(1440px)
+			font-size 10px
+			margin 0	
+			margin-bottom 3px	
+		color white
+		font-family "Noto Sans"
+		font-size 12px
+		font-style italic
+		line-height 16px
+		margin 0
+		margin 5px 0px
+
+.section-lider
+	bgi('bg-section-subscribe.jpg')
+	background-size cover
+	background-position: top center 
+	width 100%
+	position relative
+	flex(mid)
+	flex-flow column
+.section-lider-topQuote
+	+below(1600px)
+		top 8%
+	+below(1440px)
+		top 12%
+	left: 50%;
+	top: 8%;
+	margin-left: -80px;
+.section-lider-Quote
+	position absolute
+	width 180px
+.section-lider-leftQuote
+	top 25%
+	left 10%
+	span
+		font-size 14px
+		font-weight 400
+		line-height 16px
+		display inline-block
+.section-lider-rightQuote
+	top 25%
+	right 10%
+.section-lider-title
+	+below(1600px)
+		font-size 30px
+		margin-top 0
+	+below(1440px)
+		font-size 30px
+		margin-top 8%
+	text-shadow 2px 3.5px 2px rgba(0, 0, 0, 0.42)
+	color white
+	font-family "Noto Sans"
+	font-size 48px
+	font-weight 700
+	line-height 24px
+	margin-top 10%
+//.section-lider-toolTip
+.section-lider-Quote-title
+	+below(1440px)
+		font-size 14px
+	color white
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 24px
+.section-lider-Quote-text
+	+below(1440px)
+		font-size 12px
+	text-shadow 2px 3.5px 2px rgba(0, 0, 0, 0.42)
+	color white
+	font-family "Noto Sans"
+	font-size 14px
+	font-weight 400
+	line-height 18px
+	margin 10px 0
+.section-lider-Quote-but
+	text-align center
+	width 100%
+	background #FFC730
+	color #293437
+	font-family "Noto Sans"
+	font-size 16px
+	font-weight 700
+	line-height 18px
+	display inline-block
+	padding 10px
+	border-radius 7px
+	tr(all)
+	&:hover
+		background maingreen
+		color white
+		
+
+.section-lider-form-wrap
+	width 100%
+	flex(mid)
+	margin-top 100px
+	+below(1600px)
+		margin-top 25px
+	+below(1440px)
+		margin-top 2%
+	// button
+	// 	background #22af75
+	// 	color white
+.section-lider-toolTip
+	+below(1440px)
+		padding 5px 20px
+		bottom 5px
+	background-color rgba(0, 0, 0, 0.52)
+	border 2px solid white
+	border-radius 20px
+	width 660px
+	position absolute
+	bottom 30px
+	left 30px
+	padding 20px 40px
+	
+.section-lider-toolTip-title
+	+below(1440px)
+		font-size 14px
+	color white
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 24px
+	text-align center
+.section-lider-toolTip-text
+	+below(1440px)
+		font-size 10px
+		margin 5px 0
+	color white
+	font-family "Noto Sans"
+	font-size 1.2vh
+	font-weight 400
+	line-height 18px
+	text-align center
+	margin 20px 0
+.section-lider-toolTip-link
+	color #2baa76
+	font-family "Noto Sans"
+	font-size 14px
+	font-weight 400
+	line-height 24px
+	text-decoration underline
+	text-align center
+	display inline-block
+	width 100%
+	
+
+.section-clients
+	bgi('bg-section-clients.jpg')
+	background-size cover
+	background-position: center top
+	padding-top 90px
+	+below(1440px)
+		padding-top 6%
+.section-view
+	height 100vh	
+.section-clients-title
+	+below(1500px)
+		margin-bottom 5.5vh
+	font-family "Noto Sans"
+	font-size 48px
+	font-weight 700
+	line-height 24px
+	margin-bottom 4.5vh
+	margin-left 50px
+.section-clients-el-wrap
+	width 100%
+	height 55%
+	+below(1600px)
+		height 50%	
+	cf()
+.section-clients-el
+	float left
+	height 100%
+	+below(1440px)
+		.section-clients-el-bot
+			font-size 10px!important
+			height 60px
+			line-height 16px	
+
+	tr(all)
+	width 20%
+	&:nth-child(1)
+		.section-clients-el-bot,
+		.section-clients-el-top-text
+			width 100%
+			padding-left 28% !important
+	&:hover
+		cursor pointer
+		img
+			-webkit-filter brightness(50%);
+			filter: brightness(50%); 
+		.section-clients-el-bot
+			background white
+			color black
+		.section-clients-el-top-text
+			display block
+			
+.section-clients-el-top
+	height 100%
+	overflow hidden
+	position relative
+	img
+		width 100%
+		-webkit-filter: grayscale(100%);
+		filter: gray;
+		filter: grayscale(100%);
+		//filter: url(/img/desaturate.svg#css_dark);
+	
+.section-clients-el-bot
+	background maingreen
+	color white
+	font-family "Noto Sans"
+	font-size 14px
+	font-weight 700
+	line-height 22px
+	padding 10px
+	height 80px
+
+.section-clients-el-top-text
+	+below(1500px)
+		width 100%
+	position absolute
+	top 30px
+	left 5px
+	color white
+	font-family "Noto Sans"
+	font-size 14px
+	font-weight 700
+	line-height 24px
+	width 70%
+	z-index 2000
+	display none
+	li
+		margin-bottom 10px
+		+below(1500px)
+			margin-bottom 10px
+			line-height 22px
+			font-size 10px	
+		
+.section-clients-form-wrap
+	width 100%
+	flex(mid)
+	position absolute	
+	bottom 50px	
+	margin-top 50px
+	+below(1600px)
+		margin-top 25px
+	+below(1440px)
+		margin-top 50px
+.section-tarifs
+	position relative
+	bgi('bg-section-tarif.jpg')
+	background-size cover
+	background-position: center top
+	padding-top 6%
+	flex(mid)
+	.owl-dots
+		bottom -10%
+.section-tarifs-title
+	font-family "Noto Sans"
+	font-size 48px
+	font-weight 700
+	line-height 24px
+	margin-left 75px
+	position absolute
+	top 10%
+.section-tarifs-slider
+	flex(mid)
+.section-tarifs-slider-row
+	+below(1440px)
+		margin-top 30px	
+	width 100%
+	display: flex;
+	justify-content: center;
+
+.section-tarifs-slider
+	.owl-dots
+		+below(1400px)
+			bottom -8%
+//.section-tarifs-slider-row
+.section-tarifs-slider-el
+	margin 0 1%
+	box-shadow 0 0 7px rgba(0, 0, 0, 0.35)
+	width 18%
+.section-tarifs-slider-title
+	+below(1440px)
+		height 60px	
+	height 100px
+	padding-left 30px
+	background white
+	flex(mid)
+	justify-content flex-start
+	font-size 18px
+	font-weight 700
+	line-height 24px
+.section-tarifs-slider-cont
+	+below(1440px)
+		padding 10px 20px
+	padding 30px
+	background-color #293437
+
+	text
+		+below(1600px)
+			font-size 12px
+		+below(1400px)
+			font-size 10px
+		color white
+		font-family "Noto Sans"
+		font-size 16px
+		font-weight 700
+		line-height 24px
+.section-tarifs-slider-check
+	+below(1400px)
+		margin-top 10px
+	margin-top 50px
+.section-tarifs-slider-but
+	width 100%
+	background-color #ffc730
+	border-radius 5px
+	height 45px
+	display inline-block
+	color #293437
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 42px
+	text-align center
+	tr(all)
+	&:hover
+		background maingreen
+		color white
+.section-tarifs-slider-price
+	margin 50px 0
+	font-size 16px
+	font-weight 400
+	color white
+	text-align center
+	+below(1440px)
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+		margin 15px 0
+	span
+		+below(1440px)
+			font-size 22px	
+		font-size 30px
+		font-weight 700
+		margin 0 10px
+.section-tarifs-select
+	+below(1440px)
+		margin 15px 0
+	margin 30px 0
+	select 
+		width 100%
+		
+.section-tarifs-slider-title-envers
+	+below(1440px)
+		height 60px	
+	height 100px
+	padding-left 30px
+	background white
+	flex(mid)
+	justify-content flex-start
+	font-size 18px
+	font-weight 700
+	line-height 24px
+	background-color #293437
+	color white
+
+.section-tarifs-slider-el-enverse
+	background white
+	img
+		width auto !important
+	.section-tarifs-slider-cont
+		background white
+		flex(mid)
+		flex-flow column
+	
+.section-tarifs-slider-cont-enverse-arrow
+	+below(1440px)
+		margin 40px 0
+	margin 60px 0
+	
+.section-tarifs-slider-cont-small
+	+below(1440px)
+		font-size 11px
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 24px
+	color black
+	
+.section-tarifs-slider-cont-big
+	font-weight 700
+	line-height 30px
+	font-size 24px
+	text-transform uppercase
+	color black
+	margin-bottom 70px
+
+.section-tarifs-greenRow
+	width 100%
+	height 300px
+	position absolute
+	top 50%
+	margin-top -70px
+	background maingreen
+	opacity: .8;
+	
+.section-tarifs-sale-but
+	background-color #fecc00
+	border-radius 10px
+	padding 15px 60px
+	color textcolor
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 24px
+	display inline-block
+	position absolute
+	right 30px
+	top 10%
+	
+.section-tarifs-select
+	.dropdown
+		.selected
+			color maingreen!important
+			font-weight 600	
+		+below(1440px)
+			padding 0	
+		width 100%
+		background none
+		border 1px solid white
+		ul
+			margin 0
+			padding 0
+		li 
+			font-weight 600
+.dropdown .selected::after
+	//box-shadow 0 0 0
+.section-tarifs-list
+	li
+		color white
+		font-family "Noto Sans"
+		font-size 16px
+		font-weight 700
+		line-height 24px
+		margin-bottom 15px
+		+below(1600px)
+			font-size 12px
+	padding-left 20px
+	margin 0
+		
+.section-modal-wraper
+	padding 60px
+	border-radius 20px
+	box-shadow 0 0 20px rgba(2, 2, 2, 0.3)
+	background white
+	flex(mid)
+	flex-flow column
+.section-modal
+	display none
+.section-modal-thnx
+	font-family "Noto Sans"
+	font-size 36px
+	font-weight 400
+	line-height 24px
+	color black
+.section-modal-img
+	margin 50px 0
+.section-modal-title
+	color #293437
+	font-family "Noto Sans"
+	line-height 36px
+	font-size 24px
+	font-weight 700
+.section-modal-text
+	color #293437
+	font-family "Noto Sans"
+	line-height 36px
+	font-size 22px
+	font-weight 400
+.section-modal-but
+	margin-top 30px
+	background maingreen
+	color white
+	font-family "Noto Sans"
+	font-size 18px
+	font-weight 700
+	line-height 24px
+	padding 10px 60px
+	border-radius 5px
+	&:hover
+		cursor pointer
+		
+.section-final-footer-right
+	a
+		.fa
+			color #919294
+			margin-right 40px	
+			font-size 18px
+			z-index 200
+			&:hover
+				cursor pointer
+				color white
+
+text
+	a
+		&:hover
+			color yellow
+			
+//height brake
++below(1378px)
+	.section-lider-form-wrap,
+	.section-time-form-wrap,
+	.section-time-quote,
+	.section-time-elWraper,
+	.section-lider-toolTip,
+	.section-clients-title,
+	.section-clients-el-wrap,
+	.section-clients-form-wrap,
+	.section-tarifs-title,
+	.left-nav,
+	.section-tarifs-slider,
+	.section-tarifs-sale-but,
+	.section-final-form-wrap,
+	.section-final-sloganFirst,
+	.section-final-sloganSecond,
+	.section-adv-el-footer,
+	.section-main-form,
+	.section-main-video,
+	.section-main-title,
+	.section-main-logo,
+	.section-about-slider,
+	.section-about-users
+		zoom .8 
+	.section-lider-toolTip
+		bottom 8%!important
+	.section-tarifs-title,
+	.section-tarifs-sale-but
+		top 15%	
+	.section-tarifs-greenRow
+		height 35%
+		p
+			font-size 8px
+	.section-adv-el-footer
+		bottom 10%
+	.section-tarifs-slider-row
+		margin-top 0
+	.top-menu-el
+		font-size 14px
+	.section-adv-el-footer
+		bottom 2%!important
+	.section-top-footerText
+		bottom 8%
+	.section-about-slider
+		padding 2%
+		margin-top -2%
+	.section-time-form-wrap
+		top 65%
+@media only screen and (max-height: 580px)
+	.section-adv-el-text
+		p
+			font-size 8px
+	.section-lider-form-wrap,
+	.section-time-form-wrap
+		zoom .8
+	.section-lider-toolTip
+		zoom .8
+		bottom 8%!important
+
+
+.callback-modal
+	display none
+	width 300px
+	background #fff
+	padding 30px
+	border-radius 10px
+	margin-top 20px
+
+	.callback-modal-form-title
+		+below(1440px)
+			font-size 18px
+			margin-bottom 5px	
+		color #293437
+		font-family "Noto Sans"
+		font-size 22px
+		font-weight 700
+		line-height 24px
+		margin-bottom 15px
+	input 
+		background none
+		border 0px
+		min-width 240px
+		padding 10px
+		border 1px solid #293437!important
+		border-radius 5px
+		outline none
+		color #293437
+	input:-moz-placeholder
+		color #293437
+	input::-webkit-input-placeholder
+		color #293437
+	input + input 
+		margin-top 20px
+
+	button
+		+below(1440px)
+			height 35px	
+		margin-top 15px
+		background yellow
+		border 0px
+		size 240px 45px
+		background-color #fecc00
+		border-radius 5px
+		color #293437
+		font-family "Noto Sans"
+		font-size 18px
+		font-weight 700
+		line-height 24px
+		tr(all)
+		&:hover
+			background maingreen
+			color white

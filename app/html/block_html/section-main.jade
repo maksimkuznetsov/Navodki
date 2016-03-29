@@ -1,0 +1,27 @@
+.section-main.section-view#section-main
+	.section-main-logo
+		img(src="img/logo-big.png", alt="")
+
+	.section-main-title
+		.section-main-title-black С нами уже
+		.section-main-title-number 3782
+		.section-main-title-whtie пользователей
+		
+	.section-main-video
+		.section-main-video-filter
+		img(src="img/icon-play.png", alt="")
+		iframe(src="https://www.youtube.com/embed/yCR1iXLEyBY?&controls=0&rel=0&showinfo=0" ).introVideo
+	
+	.section-main-form
+		.section-main-form-title Бесплатный доступ!
+		form(action="#")
+			input(type="text" placeholder="Введите электронную почту")
+			.section-main-form-rule
+				input(type="checkbox" id="r1" name="rr" checked)
+				label(for="r1")
+					span
+					text Я принимаю 
+						a(href="#") правила сервиса
+			button(type="submit" value="Submit") Регистрация
+	
+	a(href="").section-main-sale-but Акции
