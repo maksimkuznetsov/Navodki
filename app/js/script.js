@@ -40,8 +40,8 @@ $(document).ready(function(){
 			current = number - 190,
 			length = number.toString().length,
 			interval = null,
-			additive = 1,
-			delay = 100,
+			additive = 10,
+			delay = 1000,
 			numbers = $.find();
 
 

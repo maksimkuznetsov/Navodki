@@ -163,8 +163,8 @@ input
 	+below(1440px)
 		height 50%
 	border-radius 20px
-	width 550px
-	height 50%
+	width 550px !important
+	height 318px !important
 	border 10px solid white
 	border-radius 40px
 	position relative
@@ -1277,6 +1277,11 @@ input[type="checkbox"]:checked + label span {
 	text-transform uppercase
 	color black
 	margin-bottom 70px
+	&.with-sub
+		margin-bottom 5px
+
+.section-tarifs-slider-cont-big + .section-tarifs-slider-cont-small
+	margin-bottom 40px
 
 .section-tarifs-greenRow
 	width 100%
