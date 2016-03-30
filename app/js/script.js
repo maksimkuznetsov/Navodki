@@ -9,7 +9,7 @@
 				  highlightClass:"left-nav-el-active"
 				});
     });
- })(jQuery); 
+ })(jQuery);
 
 $(document).ready(function(){
 
@@ -24,7 +24,7 @@ $(document).ready(function(){
 	 			closeClass:'section-modal-but',
 				position:['auto','auto'],
 				follow: [true,false],
-	 	}); 
+	 	});
 	})
 
 
@@ -37,11 +37,11 @@ $(document).ready(function(){
 	var numberUserBlock = function(selector){
 		var $elem = $(selector),
 			number = parseInt($elem.text()),
-			current = number - 176,
+			current = number - 190,
 			length = number.toString().length,
-			interval = null, 
+			interval = null,
 			additive = 1,
-			delay = 15,
+			delay = 100,
 			numbers = $.find();
 
 
@@ -76,7 +76,7 @@ numberUserBlock('.section-main-title-number');
 numberUserBlock('.section-about-number');
 
 	$('.section-main-video').on('click', function(ev) {
- 
+
     $(".introVideo")[0].src += "&autoplay=1";
     ev.preventDefault();
  		$('.section-main-video img').hide();
@@ -101,7 +101,7 @@ numberUserBlock('.section-about-number');
 	// $('.button-modal').click(function(){
 	// 	$('.modal-block').bPopup({
 	// 			closeClass:'closer'
-	// 	}); 
+	// 	});
 	// })
 	/* ###### init stickUp  ######*/
 	/* ###### bower i sticky  ######*/
@@ -114,31 +114,33 @@ numberUserBlock('.section-about-number');
 	$(".section-about-slider").owlCarousel({
 	 	center: true,
     items:1,
-	 	autoHeight : true,
+    loop: true,
+	 	autoHeight : false,
 	 	pagination : true,
 	 	autoPlay : true,
 	 	nav:true,
 			navText:['<img src="img/nav-left.png">','<img src="img/nav-right.png">']
 	 	}
-	 ); 	
+	 );
 
 
 	$(".section-tarifs-slider").owlCarousel({
 	 	center: true,
     items:1,
-	 	autoHeight : true,
+    loop: true,
+	 	autoHeight : false,
 	 	pagination : true,
 	 	autoPlay : true,
 	 	nav:true,
 			navText:['<img src="img/nav-left.png">','<img src="img/nav-right.png">']
 	 	}
-	 ); 
+	 );
 
 
 	/* ###### init validate form  ######*/
 	/* ###### bower i jquery-validation ######*/
 	/*$('#myform').validate({
-			rules:{ //правила для полей 
+			rules:{ //правила для полей
 				name:{
 					required:true,
 					minlength:5 //минимальное значение поля
@@ -157,7 +159,7 @@ numberUserBlock('.section-about-number');
 					required: 'Это поле обязатлеьно для заполнения',
 					number:'Введите правильный телефон'
 				},
-				
+
 			}
 			submitHandler:function(){ //выполнять если все валидно
 					alert('Форма заполнена правильно');
@@ -180,7 +182,7 @@ numberUserBlock('.section-about-number');
         collapsible: 'accordion',
         setHash: true,
         active: 0
-        
+
     });*/
 
 	/* ###### init fancybox  ######*/
@@ -188,5 +190,9 @@ numberUserBlock('.section-about-number');
 	// $(".play").fancybox();
 	// a(href="img/item-house-1.png" rel="group-element(для объединения в группу)") - image in a
 	//	img(src="img/item-house-1.png", alt="")
-	
+
+
+
+
+
 })

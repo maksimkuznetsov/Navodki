@@ -2,82 +2,97 @@
 	.section-tarifs-title Тарифы
 	a(href="#").section-tarifs-sale-but Акции
 	.section-tarifs-greenRow
-	.section-tarifs-slider.owl-carousel 
-		- for (var x = 0; x < 4; x++)
-			.section-tarifs-slider-row
-				.section-tarifs-slider-el
-					.section-tarifs-slider-title 
-						span Компания
-					.section-tarifs-slider-cont
-						ul.section-tarifs-list
-							li 10 пользователей
-							li от 833 р./поль-тель.
-							li Доступ к кладовке знаний
-						.section-tarifs-slider-check
-							.section-main-form-rule
-								input(type="checkbox" id="section-tarifs-slider-1" name="rr")
-								label(for="section-tarifs-slider-1")
-									span
-									text проверка контрагентов
-						.section-tarifs-select 
+	.section-tarifs-slider.owl-carousel
+		.section-tarifs-slider-row
+			.section-tarifs-slider-el
+				.section-tarifs-slider-title
+					span Компания
+				.section-tarifs-slider-cont
+					ul.section-tarifs-list
+						li 10 пользователей
+						li от 833 р./поль-тель.
+						li Доступ к кладовке знаний
+					.section-tarifs-slider-check
+						.section-main-form-rule
+							input(type="checkbox" id="section-tarifs-slider-1" name="rr")
+							label(for="section-tarifs-slider-1")
+								span
+								text проверка контрагентов
+					.section-tarifs-select
+						select(name="").dropdown
+							option 30 дней
+							option 30 дней
+							option 30 дней
+							option 30 дней
+					a(href="#").section-tarifs-slider-but Подключиться
+					.section-tarifs-slider-price за <span>13 520</span> руб.
+			.section-tarifs-slider-el
+				.section-tarifs-slider-title
+					span Федеральный
+				.section-tarifs-slider-cont
+					ul.section-tarifs-list
+						li 50 пользователей
+						li от 666 р./поль-тель.
+						li Доступ к кладовке знаний
+					.section-tarifs-slider-check
+						.section-main-form-rule
+							input(type="checkbox" id="section-tarifs-slider-2" name="rr")
+							label(for="section-tarifs-slider-2")
+								span
+								text проверка контрагентов
+					.section-tarifs-select
 							select(name="").dropdown
 								option 30 дней
 								option 30 дней
 								option 30 дней
 								option 30 дней
-						a(href="#").section-tarifs-slider-but Подключиться
-						.section-tarifs-slider-price за <span>13 520</span> руб.
-				.section-tarifs-slider-el
-					.section-tarifs-slider-title 
-						span Федеральный
-					.section-tarifs-slider-cont
-						ul.section-tarifs-list
-							li 50 пользователей
-							li от 666 р./поль-тель.
-							li Доступ к кладовке знаний
-						.section-tarifs-slider-check
-							.section-main-form-rule
-								input(type="checkbox" id="section-tarifs-slider-2" name="rr")
-								label(for="section-tarifs-slider-2")
-									span
-									text проверка контрагентов
-						.section-tarifs-select
-								select(name="").dropdown 
-									option 30 дней
-									option 30 дней
-									option 30 дней
-									option 30 дней
-						a(href="#").section-tarifs-slider-but Подключиться  
-						.section-tarifs-slider-price за <span>54 113</span> руб.
-				.section-tarifs-slider-el
-					.section-tarifs-slider-title 
-						span Компания
-					.section-tarifs-slider-cont
-						ul.section-tarifs-list
-							li 100 пользователей
-							li от 500 р./поль-тель.
-							li Доступ к кладовке знаний
-						.section-tarifs-slider-check
-							.section-main-form-rule
-								input(type="checkbox" id="section-tarifs-slider-3" name="rr")
-								label(for="section-tarifs-slider-3")
-									span
-									text проверка контрагентов
-						.section-tarifs-select
-							select(name="").dropdown
-								option 30 дней
-								option 30 дней
-								option 30 дней
-								option 30 дней
-						a(href="#").section-tarifs-slider-but Подключиться
-						.section-tarifs-slider-price за <span>81 250</span> руб.
-				.section-tarifs-slider-el.section-tarifs-slider-el-enverse
-					.section-tarifs-slider-title-envers
-						span Дружить выгодно
-					.section-tarifs-slider-cont.section-tarifs-slider-cont-enverse
-						.section-tarifs-slider-cont-small Групповое подключение
-						img(src="img/arrow-down.png", alt="").section-tarifs-slider-cont-enverse-arrow
-						.section-tarifs-slider-cont-small Стоимость одного участника
-						.section-tarifs-slider-cont-big Уменьшается
+					a(href="#").section-tarifs-slider-but Подключиться
+					.section-tarifs-slider-price за <span>54 113</span> руб.
+			.section-tarifs-slider-el
+				.section-tarifs-slider-title
+					span Компания
+				.section-tarifs-slider-cont
+					ul.section-tarifs-list
+						li 100 пользователей
+						li от 500 р./поль-тель.
+						li Доступ к кладовке знаний
+					.section-tarifs-slider-check
+						.section-main-form-rule
+							input(type="checkbox" id="section-tarifs-slider-3" name="rr")
+							label(for="section-tarifs-slider-3")
+								span
+								text проверка контрагентов
+					.section-tarifs-select
+						select(name="").dropdown
+							option 30 дней
+							option 30 дней
+							option 30 дней
+							option 30 дней
+					a(href="#").section-tarifs-slider-but Подключиться
+					.section-tarifs-slider-price за <span>81 250</span> руб.
 
-						a(href="#").section-tarifs-slider-but Подключиться
+		.section-tarifs-slider-row
+			.section-tarifs-slider-el.section-tarifs-slider-el-enverse
+				.section-tarifs-slider-title-envers
+					span Дружить выгодно
+				.section-tarifs-slider-cont.section-tarifs-slider-cont-enverse
+					.section-tarifs-slider-cont-small Групповое подключение
+					img(src="img/arrow-down.png", alt="").section-tarifs-slider-cont-enverse-arrow
+					.section-tarifs-slider-cont-small Стоимость одного участника
+					.section-tarifs-slider-cont-big Уменьшается
+
+					a(href="#").section-tarifs-slider-but Подключиться
+
+			.section-tarifs-slider-el.section-tarifs-slider-el-enverse
+				.section-tarifs-slider-title-envers
+					span 7 дней — бесплатно
+				.section-tarifs-slider-cont.section-tarifs-slider-cont-enverse
+					.section-tarifs-slider-cont-small Специальное предложение!
+					img(src="img/arrow-down.png", alt="").section-tarifs-slider-cont-enverse-arrow
+					.section-tarifs-slider-cont-small Каждому новому пользователю дарим
+					.section-tarifs-slider-cont-big
+						| ТЕСТОВЫЙ
+						br
+						| ПЕРИОД 7 ДНЕЙ
+
+					a(href="#").section-tarifs-slider-but Подключиться

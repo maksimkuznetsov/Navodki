@@ -33,7 +33,7 @@ var sprity = require('sprity');
 
 // ########## make img ###############
 
-// generate sprite.png and _sprite.scss 
+// generate sprite.png and _sprite.scss
 gulp.task('sprites', function () {
   return sprity.src({
     src: 'app/img/sprite/*.png',
@@ -87,7 +87,7 @@ gulp.task('stylus', function () {
         use:[rupture(),axis(),jeet()]
         })).on('error', errorhandler)
     .pipe(gulp.dest('./app/css/'))
-  
+
 });
 
 //Source map
@@ -218,8 +218,8 @@ gulp.task('see',function(){
 
 //default
 gulp.task('img',['imagePng' , 'imageJpg']);
-gulp.task('default', ['serve','see']);
-gulp.task('build',['sourcemaps','copy:font','prefix','make']);
+gulp.task('default', ['serve','see', 'prefix']);
+gulp.task('build',['sourcemaps','copy:font', 'make']);
 gulp.task('fast-build',['stylus','prefix','jade','copy:js','ftp']);
 
 

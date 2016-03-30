@@ -5,48 +5,48 @@ html(lang="en")
 body
 	.main-cont
 		//Left-nav
-		.left-nav 
+		.left-nav
 			a(href="#section-adv" rel="m_PageScroll2id").left-nav-el
-				.left-nav-el-img 
+				.left-nav-el-img
 					img(src="img/icon-leffBlock-good.png", alt="")
-				.left-nav-el-text Преимущества 
+				.left-nav-el-text Преимущества
 			a(href="#section-about" rel="m_PageScroll2id").left-nav-el
-					.left-nav-el-img 
+					.left-nav-el-img
 						img(src="img/icon-leffBlock-part.png", alt="")
-					.left-nav-el-text О нас 
+					.left-nav-el-text О нас
 			a(href="#section-lider" rel="m_PageScroll2id").left-nav-el
-					.left-nav-el-img 
+					.left-nav-el-img
 						img(src="img/icon-leffBlock-graf.png", alt="")
 					.left-nav-el-text Станьте лидером отрасли
 			a(href="#section-tarifs" rel="m_PageScroll2id").left-nav-el
-					.left-nav-el-img 
+					.left-nav-el-img
 						img(src="img/icon-leffBlock-money.png", alt="")
 					.left-nav-el-text Тарифы
 			a(href="#section-time" rel="m_PageScroll2id").left-nav-el
-					.left-nav-el-img 
+					.left-nav-el-img
 						img(src="img/icon-leffBlock-docs.png", alt="")
 					.left-nav-el-text Заработайте с нами
 			a(href="#section-final" rel="m_PageScroll2id").left-nav-el
-					.left-nav-el-img 
+					.left-nav-el-img
 						img(src="img/icon-leffBlock-man.png", alt="")
-					.left-nav-el-text Персональный менеджер  
+					.left-nav-el-text Персональный менеджер
 
 		//top-menu
 		.top-menu
 			.top-menu-left
 				.top-menu-logo
 					img(src="img/logo-small.png", alt="" href="")
-				a(href="#").top-menu-el О нас
-				a(href="#").top-menu-el Тарифы
-				a(href="#").top-menu-el Обратная связь
+				a(href="#section-about" rel="m_PageScroll2id").top-menu-el О нас
+				a(href="#section-tarifs" rel="m_PageScroll2id").top-menu-el Тарифы
+				a(href="#section-final" rel="m_PageScroll2id").top-menu-el Обратная связь
 			.top-menu-right
 				.top-menu-right-img
 					img(src="img/icon-phone.png", alt="")
 				.top-menu-right-number 8 800 500 61 41
-		
+
 		//section-main
-		include ./block_html/section-main.jade 
-		
+		include ./block_html/section-main.jade
+
 		//section-adv
 		include ./block_html/section-adv.jade
 
@@ -54,21 +54,21 @@ body
 		include ./block_html/section-about.jade
 
 		//section-time
-		include ./block_html/section-time.jade  
+		include ./block_html/section-time.jade
 
 		//section-final
 		include ./block_html/section-lider.jade
 
 		//section-clients
 		include ./block_html/section-clients.jade
-		
+
 		//section-tarifs
 		include ./block_html/section-tarifs.jade
 
 		//section-final
-		include ./block_html/section-final.jade 
-		
-		//Modal 
+		include ./block_html/section-final.jade
+
+		//Modal
 		.section-modal
 			.section-modal-wraper
 				.section-modal-thnx Спасибо
@@ -76,7 +76,7 @@ body
 					img(src="img/modal-img.png", alt="")
 				.section-modal-title Ваше сообщение отправлено!
 				.section-modal-text Мы свяжемся с вами в самое ближайшее время.
-				.section-modal-but Ок 
-			
+				.section-modal-but Ок
+
 	//Include Footer
 	include ./block_html/script.jade
