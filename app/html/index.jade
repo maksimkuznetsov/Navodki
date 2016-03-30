@@ -18,7 +18,7 @@ body
 					.left-nav-el-img
 						img(src="img/icon-leffBlock-graf.png", alt="")
 					.left-nav-el-text Станьте лидером отрасли
-			a(href="#section-tarifs" rel="m_PageScroll2id").left-nav-el
+			a(href="#section-tarifs" rel="m_PageScroll2id").left-nav-el 
 					.left-nav-el-img
 						img(src="img/icon-leffBlock-money.png", alt="")
 					.left-nav-el-text Тарифы
@@ -26,11 +26,11 @@ body
 					.left-nav-el-img
 						img(src="img/icon-leffBlock-docs.png", alt="")
 					.left-nav-el-text Заработайте с нами
-			a(href="#section-final" rel="m_PageScroll2id").left-nav-el
+			a(data-open-callback-modal rel="m_PageScroll2id").left-nav-el
 					.left-nav-el-img
 						img(src="img/icon-leffBlock-man.png", alt="")
-					.left-nav-el-text Персональный менеджер
-
+					.left-nav-el-text Персональный менеджер 
+ 
 		//top-menu
 		.top-menu
 			.top-menu-left
@@ -43,7 +43,7 @@ body
 				.top-menu-right-img
 					img(src="img/icon-phone.png", alt="")
 				.top-menu-right-number 8 800 500 61 41
-
+ 
 		//section-main
 		include ./block_html/section-main.jade
 
@@ -56,7 +56,7 @@ body
 		//section-time
 		include ./block_html/section-time.jade
 
-		//section-final
+		//section-lider
 		include ./block_html/section-lider.jade
 
 		//section-clients
@@ -77,6 +77,14 @@ body
 				.section-modal-title Ваше сообщение отправлено!
 				.section-modal-text Мы свяжемся с вами в самое ближайшее время.
 				.section-modal-but Ок
+
+		.callback-modal
+			.callback-modal-form
+				.callback-modal-form-title Заказать звонок
+				form
+					input(type="text" placeholder="Имя")
+					input(type="text" placeholder="Телефон")
+					button(type="submit") Отправить
 
 	//Include Footer
 	include ./block_html/script.jade
