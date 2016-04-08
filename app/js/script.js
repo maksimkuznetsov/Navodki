@@ -13,6 +13,20 @@
 
 $(document).ready(function(){
 
+	$('.section-tarifs-slider-cont').find('.section-tarifs-select').find('select').on('change', function() {
+		changeText(this);
+	});
+	$('.section-tarifs-slider-cont').find('.section-tarifs-slider-check').find('input[type="checkbox"]').prop('checked', true).on('change', function() {
+		changeText(this);
+	});
+	
+	function changeText(el) {
+		var $parent = $(el).parents('.section-tarifs-slider-cont');
+		var selectedItem = $parent.find('.section-tarifs-select').find('select option:selected');
+		var newPrice = $parent.find('.section-tarifs-slider-check').find('input[type="checkbox"]').prop('checked') ? selectedItem.data('contr') : selectedItem.data('price');
+		$parent.find('.section-tarifs-slider-price span').text(newPrice);
+	}
+
 	$('[data-open-callback-modal]').on('click', function(){
 		$('.callback-modal').bPopup();
 	});
