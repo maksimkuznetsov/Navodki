@@ -543,7 +543,7 @@ input::-webkit-input-placeholder {
 input[type="checkbox"] {
   display: none;
 }
-input[type="checkbox"] + label span {
+input[type="checkbox"] + span {
   display: inline-block;
   width: 25px;
   height: 25px;
@@ -552,7 +552,7 @@ input[type="checkbox"] + label span {
   background: url("../img/Check-box.png") no-repeat;
   cursor: pointer;
 }
-input[type="checkbox"]:checked + label span {
+input[type="checkbox"]:checked + span {
   background: url("../img/Check-box-ckeck.png") no-repeat;
 }
 .left-nav {

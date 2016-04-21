@@ -138,10 +138,10 @@ numberUserBlock('.section-about-number');
 	 );
 
 
-	$(".section-tarifs-slider").owlCarousel({
+	var owl = $(".section-tarifs-slider").owlCarousel({
 	 	center: true,
-    items:1,
-    loop: true,
+    	items:1,
+    	loop: false,
 	 	autoHeight : false,
 	 	pagination : true,
 	 	autoPlay : true,
@@ -149,6 +149,14 @@ numberUserBlock('.section-about-number');
 			navText:['<img src="img/nav-left.png">','<img src="img/nav-right.png">']
 	 	}
 	 );
+
+	$('.section-tarifs-sale-but').on('click', function() {
+		owl.trigger('to.owl.carousel', [2, 200]);
+	});
+	$('.section-main-sale-but').on('click', function() {
+		owl.trigger('to.owl.carousel', [2, 200]);
+	});
+	
 
 
 	/* ###### init validate form  ######*/
